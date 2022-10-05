@@ -1,0 +1,60 @@
+body {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+}
+
+body::before {
+  content: "";
+  display: block;
+  height: 100px;
+}
+
+.header {
+  padding-top: 160px;
+  padding-bottom: 473px;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.37px;
+}
+
+.my-recent-works {
+  margin-bottom: 192px;
+}
+
+@media screen and (min-width: 50em) {
+  #Home {
+    background-image: url(images/header-background-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+
+  #about {
+    background-image: url(images/about-me-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+
+  #footer-section {
+    background-image: url(images/contact-form-background-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  #Home {
+    background-image: url(images/header-background-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+
+  #about {
+    background-image: url(images/about-me-background-mobile.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+  }
+}
